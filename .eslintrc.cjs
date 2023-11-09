@@ -13,6 +13,9 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
         "prettier"
     ],
+    "ignorePatterns": [
+      "commitlint.config.cjs"
+    ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
