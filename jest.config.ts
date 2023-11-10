@@ -8,6 +8,8 @@ export default {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy",
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
+  collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/*.ts"],
+  coveragePathIgnorePatterns: ["<rootDir>/src/vite-env.d.ts", "<rootDir>/src/main.tsx"],
   coverageThreshold: {
     global: {
       branches: 90,

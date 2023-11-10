@@ -28,9 +28,6 @@ jobs:
         run: yarn lint
 
       - name: Check Code Coverage
-        run: yarn test:coverage
-
-      - name: Produce the coverage report
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
