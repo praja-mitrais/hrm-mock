@@ -15,6 +15,7 @@ jobs:
        contents: read
        pull-requests: write
        checks: write
+    name: Code Health Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎
@@ -34,4 +35,5 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           package-manager: yarn
+          annotations: none
           custom-title: "Code Coverage Summary"
