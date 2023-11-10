@@ -11,6 +11,10 @@ on:
 
 jobs:
   health-check:
+    permissions:
+       contents: read
+       pull-requests: write
+       checks: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎
@@ -28,5 +32,6 @@ jobs:
       - name: Produce the coverage report
         uses: ArtiomTr/jest-coverage-report-action@v2
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           package-manager: yarn
           custom-title: "Code Coverage Summary"
