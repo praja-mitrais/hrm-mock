@@ -11,10 +11,7 @@ on:
 
 jobs:
   health-check:
-    permissions:
-       contents: read
-       pull-requests: write
-       checks: write
+    permissions: write-all
     name: Code Health Check
     runs-on: ubuntu-latest
     steps:
