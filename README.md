@@ -16,7 +16,7 @@ We use `prettier` as code formatter. Run `yarn format` to manually run it or set
 
 - We use `Husky` as a minimum code health check before commit.
 - We alse use `Commitlint` for commit message checking. The convention for commit message is
-  ``` 
+  ```
       type(scope?): subject
       body?
       footer?
@@ -26,6 +26,7 @@ We use `prettier` as code formatter. Run `yarn format` to manually run it or set
 ### Github Action
 
 We use github action as our repo pipeline to do health check. Our github action steps for now is
-  - Installing dependencies
-  - Check lint
-  - Check Code Coverage and send the report as commit message or PR message
+
+- Installing dependencies
+- Check lint
+- Check Code Coverage and send the report as commit message or PR message
