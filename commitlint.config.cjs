@@ -1,10 +1,10 @@
 module.exports = {
   parserPreset: {
     parserOpts: {
-      issuePrefixes: ['PURPLE-']
-    }
+      issuePrefixes: ["PURPLE-"],
+    },
   },
-  rules: { 
-    'references-empty': [1, 'never'],
+  rules: {
+    "references-empty": [1, "never"],
   },
 };
