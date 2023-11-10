@@ -4,13 +4,16 @@ This template provides a setup to get React working in Vite with HMR and some ES
 
 What we have so far
 
+
 ### Expanding the ESLint configuration
 
 We extend the `Airbnb` and `Airbnb Typescript` lint rules
 
+
 ### Prettier configuration
 
 We use `prettier` as code formatter. Run `yarn format` to manually run it or set your `VS Code` to `Format on Save`
+
 
 ### Husky and Commitlint
 
@@ -22,6 +25,7 @@ We use `prettier` as code formatter. Run `yarn format` to manually run it or set
       footer?
   ```
   Please refer `type` to be one of [Type Enum](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-conventional#type-enum)
+  
 
 ### Github Action
 
