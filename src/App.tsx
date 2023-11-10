@@ -20,7 +20,6 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <p>{count < 5 ? "This is small count" : "This is big count"}</p>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </>
