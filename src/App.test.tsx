@@ -3,6 +3,10 @@ import userEvent from "@testing-library/user-event";
 
 import App from "./App";
 
+jest.mock("./config/env", () => ({
+  TEXT: "TEXT",
+}));
+
 describe("Unit Test", () => {
   it("Test", () => {
     expect(true).toBe(true);

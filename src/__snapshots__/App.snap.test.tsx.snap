@@ -32,6 +32,9 @@ exports[`renders correctly 1`] = `
       </code>
        and save to test HMR
     </p>
+    <h1>
+      TEXT
+    </h1>
   </div>,
   <p
     className="read-the-docs"
