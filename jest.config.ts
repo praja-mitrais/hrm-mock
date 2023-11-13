@@ -9,7 +9,12 @@ export default {
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   collectCoverageFrom: ["src/**/*.{ts,tsx}", "!src/*.ts"],
-  coveragePathIgnorePatterns: ["<rootDir>/src/vite-env.d.ts", "<rootDir>/src/main.tsx"],
+  coveragePathIgnorePatterns: [
+    "<rootDir>/src/vite-env.d.ts",
+    "<rootDir>/src/main.tsx",
+    "<rootDir>/src/config/env.ts",
+  ],
+  coverageReporters: ["json-summary", "text-summary", "lcov"],
   coverageThreshold: {
     global: {
       branches: 90,

@@ -27,12 +27,10 @@ jobs:
       - name: Check Lint
         run: yarn lint
 
-      - name: Check Code Coverage
-        uses: ArtiomTr/jest-coverage-report-action@v2
+      - name: Run tests
+        run: yarn test:coverage
+
+      - name: Jest Coverage Comment
+        uses: MishaKav/jest-coverage-comment@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          package-manager: yarn
-          skip-step: install
-          base-coverage-file: report.json
-          annotations: none
-          custom-title: "Code Coverage Summary"
+          - title: "Unit Test Coverage"
