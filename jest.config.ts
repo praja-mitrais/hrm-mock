@@ -15,4 +15,12 @@ export default {
     "<rootDir>/src/config/env.ts",
   ],
   coverageReporters: ["json-summary", "text-summary", "lcov"],
+  coverageThreshold: {
+    global: {
+      branches: 90,
+      functions: 90,
+      lines: 90,
+      statements: 90,
+    },
+  },
 };
