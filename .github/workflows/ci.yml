@@ -33,4 +33,4 @@ jobs:
       - name: Jest Coverage Comment
         uses: MishaKav/jest-coverage-comment@main
         with:
-          - title: "Unit Test Coverage"
+          - title: Unit Test Coverage
