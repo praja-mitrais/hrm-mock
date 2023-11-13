@@ -31,4 +31,5 @@ jobs:
         run: yarn test:coverage
 
       - name: Jest Coverage Comment
+        if: always()
         uses: MishaKav/jest-coverage-comment@main
