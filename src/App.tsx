@@ -21,6 +21,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
+        <p>{count > 10 ? "This is BIG" : "This is Small"}</p>
         <h1>{TEXT}</h1>
       </div>
       <p className="read-the-docs">Click on the Vite and React logos to learn more</p>

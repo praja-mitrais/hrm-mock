@@ -32,6 +32,9 @@ exports[`renders correctly 1`] = `
       </code>
        and save to test HMR
     </p>
+    <p>
+      This is Small
+    </p>
     <h1>
       TEXT
     </h1>
